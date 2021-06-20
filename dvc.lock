@@ -19,6 +19,9 @@ stages:
   split_data:
     cmd: python source/split_data.py --config=params.yaml
     deps:
+    - path: data/raw/winequality.csv
+      md5: d98e8f2eca228c11c4de1cc96866a54d
+      size: 93598
     - path: source/get_data.py
       md5: 85295cfcb29aef981f903a1b48543fd4
       size: 561
